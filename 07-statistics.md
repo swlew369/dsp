@@ -69,15 +69,71 @@ Cohen's D is an example of effect size.  Other examples of effect size are:  cor
 
 You will see effect size again and again in results of algorithms that are run in data science.  For instance, in the bootcamp, when you run a regression analysis, you will recognize the t-statistic as an example of effect size.
 
+CohenEffectSize(firsts.totalwgt_lb,others.totalwgt_lb)
+-0.088672927072602006
+
+CohenEffectSize(firsts.prglngth,others.prglngth)
+0.028879044654449883
+
+
 ### Q2. [Think Stats Chapter 3 Exercise 1](statistics/3-1-actual_biased.md) (actual vs. biased)
 This problem presents a robust example of actual vs biased data.  As a data scientist, it will be important to examine not only the data that is available, but also the data that may be missing but highly relevant.  You will see how the absence of this relevant data will bias a dataset, its distribution, and ultimately, its statistical interpretation.
+
+actual_pmf = thinkstats2.Pmf(resp.numkdhh, label='actual') actual_pmf Pmf({0: 0.46617820227659301, 1: 0.21405207379301322, 2: 0.19625801386889966, 3: 0.087138558157791451, 4: 0.025644380478869556, 5: 0.010728771424833181})
+
+biased_pmf = BiasPmf(actual_pmf, label='observed') biased_pmf thinkplot.PrePlot(2) thinkplot.Pmfs([actual_pmf, biased_pmf]) thinkplot.Config(xlabel='Number of kids per household', ylabel='PMF')
+
+print('Actual mean', actual_pmf.Mean()) print('Observed-biased mean', biased_pmf.Mean()) Actual mean 1.02420515504 Observed-biased mean 2.40367910066
 
 ### Q3. [Think Stats Chapter 4 Exercise 2](statistics/4-2-random_dist.md) (random distribution)  
 This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
 
+my_nums = np.random.random(1000)
+random_pmf = thinkstats2.Pmf(my_nums, label='random numbers')
+thinkplot.Pmf(random_pmf, linewidth=0.1)
+thinkplot.Config(xlabel='Random variate', ylabel='PMF')
+
+r_cdf = thinkstats2.Cdf(my_nums, label='random_numbers')
+
+thinkplot.PrePlot(1)
+thinkplot.Cdfs([r_cdf])
+thinkplot.Config(xlabel='Random Variable', ylabel='CDF')
+
 ### Q4. [Think Stats Chapter 5 Exercise 1](statistics/5-1-blue_men.md) (normal distribution of blue men)
 This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
 
+import scipy.stats
+mu = 178
+sigma = 7.7
+dist = scipy.stats.norm(loc=mu, scale=sigma)
+
+dist.mean(), dist.std()
+(178.0, 7.7000000000000002)
+
+How many people are between 5'10" and 6'1"?
+
+# Calculated Z score first than used cdf function
+z1 = (mu - 177.8) / (sigma) # 5'10 in cm
+#z2 = (185.42 - mu) / (sigma) # 6'1 in cm
+z2 = abs((mu- 185.42)) / (sigma)
+#norm.cdf(z1) 
+print(scipy.stats.norm.cdf(z1))
+print(scipy.stats.norm.cdf(z2))
+print()
+print(scipy.stats.norm.cdf(z2) - scipy.stats.norm.cdf(z1))
+print()
+print("Percent of population between 5'10- 6'1:")
+print(100*(scipy.stats.norm.cdf(z2) - scipy.stats.norm.cdf(z1)))
+
+Output:
+
+0.510360972135
+0.832385865496
+
+0.322024893361
+
+Percent of population between 5'10- 6'1:
+32.2024893361
 
 
 ### Q5. Bayesian (Elvis Presley twin) 
