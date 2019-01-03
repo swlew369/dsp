@@ -110,7 +110,7 @@ dist = scipy.stats.norm(loc=mu, scale=sigma)
 dist.mean(), dist.std()
 (178.0, 7.7000000000000002)
 
-How many people are between 5'10" and 6'1"?
+# How many people are between 5'10" and 6'1"?
 
 # Calculated Z score first than used cdf function
 z1 = (mu - 177.8) / (sigma) # 5'10 in cm
