@@ -135,8 +135,8 @@ Output:
 
 0.322024893361
 
-#Percent of population between 5'10- 6'1:
-#32.2024893361
+**Percent of population between 5'10- 6'1:
+**32.2024893361
 
 
 ### Q5. Bayesian (Elvis Presley twin) 
@@ -163,12 +163,12 @@ P(D): the probability of the data (D), the probability that Elvis’s sibling is
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
-Bayes:
+**Bayes:
 Uses probabilities for both hypothesis and data.
 Requires knowledge of the prior, the probability of the the hypothesis before any data. 
 As a result, Bayes analysis requires one to either know the prior probability or construct one.
 
-Frequentist:
+**Frequentist:
 Does not require knowledge of probability of a hypothesis. In frequentist
 analysis, probability of an event or value is related to the observed frequency
 of the event or value.
