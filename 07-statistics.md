@@ -160,7 +160,13 @@ P(D): the probability of the data (D), the probability that Elvis’s sibling is
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Bayes:
+Uses probabilities for hypothesis and data
+Requires a prior, the probability of the the hypothesis before any data. 
+As a result, Bayes requires one to know the prior probability or construct one.
+
+Frequentist:
+Does not require knowledge of probability of a hypothesis
 
 ---
 
