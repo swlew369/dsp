@@ -135,8 +135,8 @@ Output:
 
 0.322024893361
 
-Percent of population between 5'10- 6'1:
-32.2024893361
+#Percent of population between 5'10- 6'1:
+#32.2024893361
 
 
 ### Q5. Bayesian (Elvis Presley twin) 
