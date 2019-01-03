@@ -113,9 +113,12 @@ dist.mean(), dist.std()
 # How many people are between 5'10" and 6'1"?
 
 # Calculated Z score first than used cdf function
-z1 = (mu - 177.8) / (sigma) # 5'10 in cm
+#z1 = (mu - 177.8) / (sigma) # 5'10 in cm
+
 #z2 = (185.42 - mu) / (sigma) # 6'1 in cm
+
 z2 = abs((mu- 185.42)) / (sigma)
+
 #norm.cdf(z1) 
 print(scipy.stats.norm.cdf(z1))
 print(scipy.stats.norm.cdf(z2))
