@@ -166,12 +166,12 @@ How do frequentist and Bayesian statistics compare?
 **Bayes:
 Uses probabilities for both hypothesis and data.
 Requires knowledge of the prior, the probability of the the hypothesis before any data. 
-As a result, Bayes analysis requires one to either know the prior probability or construct one.
+As a result, Bayes analysis requires one to either know the prior probability or construct one.**
 
 **Frequentist:
 Does not require knowledge of probability of a hypothesis. In frequentist
 analysis, probability of an event or value is related to the observed frequency
-of the event or value.
+of the event or value.**
 
 ---
 
