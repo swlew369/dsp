@@ -161,7 +161,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 **The Likelihood: P(D | H) is the probability of data given hypothesis**
 
-**P(D): the probability of the data (D), the probability that Elvis’s sibling is a brother for all possible hypothesis: Elivs sibling is identical twin or Elvis sibling is a fraternal twin. **
+**P(D): the probability of the data (D),the probability that Elvis’s sibling is a brother for all possible hypothesis: Elivs sibling is identical twin or Elvis sibling is a fraternal twin.**
 
 **Elivs sibling, a boy, could be either a identical twin or a fraternal twin.**
 
