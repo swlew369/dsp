@@ -151,17 +151,31 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
-Hypothesis (H) : Elvis’s sibling is an identical twin
+**Hypothesis (H) : Elvis’s sibling is an identical twin**
 
-Data (D) : Elivis’s sibling is a boy(brother)
+**Data (D) : Elivis’s sibling is a boy(brother)**
 
-The Prior: the probability of hypothesis before any data, P(H) = 1 / 300
+**The Prior: the probability of hypothesis before any data, P(H) = 1 / 300**
 
-The Posterior:  P(H | D) the probability that H (sibling is an identical twin) provided by the Data (sibling is a brother)
+**The Posterior:  P(H | D) the probability that H (sibling is an identical twin) provided by the Data (sibling is a brother)**
 
-The Likelihood: P(D | H) is the probability of data given hypothesis
+**The Likelihood: P(D | H) is the probability of data given hypothesis**
 
-P(D): the probability of the data (D), the probability that Elvis’s sibling is a brother for all possible hypothesis: Elivs sibling is identical twin or Elvis sibling is a fraternal twin. Hence,  P(D) = 1/2 * 1/300 + 1 /2 * 1/125
+**P(D): the probability of the data (D), the probability that Elvis’s sibling is a brother for all possible hypothesis: Elivs sibling is identical twin or Elvis sibling is a fraternal twin. **
+
+**Elivs sibling, a boy, could be either a identical twin or a fraternal twin.**
+
+**Scenario 1: Elvis's brother is a identical twin
+Identical Twins are of the same sex. So, there are 2 possibilities: GG or BB where B represents a boy and G represents a girl. As a result,
+the probability of identical twins being both boys is 1/2. And the probability of having identical twin boys is the
+probability of having identicals twins multiplied by the probablity of identical twins being boys which is 1/2 * 1/300**
+
+**Scenario 2: Elvis's brother is a fraternal twin
+Fraternal Twins: They can be either same sex or opposite sex. Therefore, fraternal twins can be: BB,GB,BG or GG where B represents a boy and G represents a girl. So the probability of fraternal twins being boy-boy fraternal twins is 1/4
+Multiply the probability of fraternal twins by the probability of both fraternal twins being boys which is  1 /4 * 1/125**
+
+**Hence,  P(D) = 1/2 * 1/300 + 1 /4 * 1/125**
+
 
 
 ---
