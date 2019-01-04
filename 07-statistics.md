@@ -95,6 +95,11 @@ thinkplot.Config(xlabel='Random variate', ylabel='PMF')
 
 r_cdf = thinkstats2.Cdf(my_nums, label='random_numbers')
 
+The plot of a CDF for the random numbers generated is that of a straight line
+which is consistent for a uniform distribution
+
+The plot of a CDF for a Normal distribution is sigmoidal
+
 thinkplot.PrePlot(1)
 thinkplot.Cdfs([r_cdf])
 thinkplot.Config(xlabel='Random Variable', ylabel='CDF')
