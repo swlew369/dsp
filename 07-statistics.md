@@ -167,18 +167,18 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 **Scenario 1: Elvis's brother is a identical twin**
 
-**Identical Twins are of the same sex. 
-So, there are 2 possibilities: GG or BB where B represents a boy and G represents a girl. As a result,
+**Identical Twins are of the same sex.** 
+**So, there are 2 possibilities: GG or BB where B represents a boy and G represents a girl. As a result,
 the probability of identical twins being both boys is 1/2. And the probability of having identical twin boys is the
 probability of having identicals twins multiplied by the probablity of identical twins being boys which is 1/2 * 1/300**
 
 **Scenario 2: Elvis's brother is a fraternal twin**
 
-**Fraternal Twins can be either the same sex or opposite sex.
-Therefore, fraternal twins can be: BB,GB,BG or GG where B represents a boy and G represents a girl. So the probability of fraternal twins being boy-boy fraternal twins is 1/4
+**Fraternal Twins can be either the same sex or opposite sex.**
+**Therefore, fraternal twins can be: BB,GB,BG or GG where B represents a boy and G represents a girl. So the probability of fraternal twins being boy-boy fraternal twins is 1/4
 Multiply the probability of fraternal twins by the probability of both fraternal twins being boys which is  1 /4 * 1/125**
 
-**Hence,  P(D) = 1/2 * 1/300 + 1 /4 * 1/125**
+**Hence, P(D) = 1/2 * 1/300 + 1 /4 * 1/125**
 
 
 
